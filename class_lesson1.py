@@ -1,4 +1,4 @@
-class Polygon: #the class name always start with a variable 
+class Polygon: #the class name always start with a upper case variable 
     def __init__(self, sides, name):
         self.sides = sides
         self.name = name
