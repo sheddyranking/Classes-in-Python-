@@ -17,7 +17,7 @@ class Polygon: #the class name always start with a upper case variable
         for i in range(self.sides):
             turtle.forward(self.size)
             turtle.right(90)
-        turtle.done()
+        #turtle.done()
 
 #defining the sub_class
 
@@ -26,9 +26,17 @@ class square(Polygon):
         super().__init__(4, "square", size, color, line_thickness)
          #the super method inherits from the parent class
     
+    #sub_class can also be use to override a method in the parent class (method overriding).
+    def draw(self):
+        turtle.begin_fill()
+        super().draw()
+        turtle.end_fill()
+    
 square = square()
 
 print(square.sides)
 print(square.name)
 
 print(square.draw())
+
+turtle.done()
