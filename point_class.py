@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-class Piont:
+class Point:
      def __init__(self, x, y):
          self.x  = x
          self.y = y
@@ -9,7 +9,7 @@ class Piont:
         plt.scatter(self.x, self.y)
 
 
-graph = Piont(4 ,5)
+graph = Point(4 ,5)
 graph.plot()
 
 plt.show()
