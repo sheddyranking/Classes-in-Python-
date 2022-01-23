@@ -23,9 +23,12 @@ class Polygon: #the class name always start with a upper case variable
 
 class square(Polygon):
     def __init__(self, size = 100, color="red", line_thickness=2):
-        super().__init__(4, "square", size, color, line_thickness) #the super method inherits from the parent class
+        super().__init__(4, "square", size, color, line_thickness)
+         #the super method inherits from the parent class
     
 square = square()
 
 print(square.sides)
 print(square.name)
+
+print(square.draw())
